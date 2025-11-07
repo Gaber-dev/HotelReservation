@@ -1,0 +1,11 @@
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\bin\Debug\net8.0\Reservation.Domain.deps.json
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\bin\Debug\net8.0\Reservation.Domain.dll
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\bin\Debug\net8.0\Reservation.Domain.pdb
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.AssemblyInfoInputs.cache
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.AssemblyInfo.cs
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.csproj.CoreCompileInputs.cache
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.dll
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\obj\Debug\net8.0\refint\Reservation.Domain.dll
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.pdb
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\obj\Debug\net8.0\ref\Reservation.Domain.dll

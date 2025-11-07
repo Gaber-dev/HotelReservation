@@ -1,0 +1,14 @@
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\bin\Debug\net8.0\Reservation.Data.deps.json
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\bin\Debug\net8.0\Reservation.Data.runtimeconfig.json
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\bin\Debug\net8.0\Reservation.Data.dll
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\bin\Debug\net8.0\Reservation.Data.pdb
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\obj\Debug\net8.0\Reservation.Data.csproj.AssemblyReference.cache
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\obj\Debug\net8.0\Reservation.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\obj\Debug\net8.0\Reservation.Data.AssemblyInfoInputs.cache
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\obj\Debug\net8.0\Reservation.Data.AssemblyInfo.cs
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\obj\Debug\net8.0\Reservation.Data.csproj.CoreCompileInputs.cache
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\obj\Debug\net8.0\Reservation.Data.dll
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\obj\Debug\net8.0\refint\Reservation.Data.dll
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\obj\Debug\net8.0\Reservation.Data.pdb
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\obj\Debug\net8.0\Reservation.Data.genruntimeconfig.cache
+E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Data\obj\Debug\net8.0\ref\Reservation.Data.dll
