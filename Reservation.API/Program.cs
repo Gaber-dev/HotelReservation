@@ -97,9 +97,9 @@ namespace Reservation.API
                 var userManager = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
                 var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<AppRole>>();
 
-                string adminEmail = "adminadmin@hotel.com";
-                string adminPassword = "Admin@12345";
-                string roleName = "Admin";
+                string adminEmail = "...";
+                string adminPassword = "...";
+                string roleName = "...";
 
                 if(await roleManager.RoleExistsAsync(roleName))
                 {
@@ -136,3 +136,4 @@ namespace Reservation.API
         }
     }
 }
+
