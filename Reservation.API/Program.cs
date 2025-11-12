@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Reservation.API.Services.Auth;
+using Reservation.API.Services.Email;
 using Reservation.Data.Data;
 using Reservation.Data.Model.Role;
 using Reservation.Data.Model.User;
@@ -26,7 +27,7 @@ namespace Reservation.API
             builder.Services.AddDbContext<ApplicationDbContext>(
                 options =>
                 {
-                    options.UseSqlServer(builder.Configuration.GetConnectionString("SQLConnection"));
+                    options.UseSqlServer(builder.Configuration.GetConnectionString("..."));
                 }
                 );
 
@@ -62,10 +63,10 @@ namespace Reservation.API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-
+            
 
             builder.Services.AddScoped<IAuthService, AuthService>();
-
+            builder.Services.AddScoped<IEmailService, EmailService>();
 
 
             var app = builder.Build();
@@ -97,9 +98,9 @@ namespace Reservation.API
                 var userManager = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
                 var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<AppRole>>();
 
-                string adminEmail = "...";
+                string adminEmail = "....";
                 string adminPassword = "...";
-                string roleName = "...";
+                string roleName = "..";
 
                 if(await roleManager.RoleExistsAsync(roleName))
                 {
@@ -136,4 +137,3 @@ namespace Reservation.API
         }
     }
 }
-
