@@ -64,7 +64,7 @@ namespace Reservation.API.Controllers
         }
 
 
-        // POST: api/auth/forgot-password
+        
         [HttpPost("forgot-password")]
         public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordDto dto)
         {
@@ -82,7 +82,7 @@ namespace Reservation.API.Controllers
             return Ok(new { message = result });
         }
 
-        // POST: api/auth/reset-password
+        
         [HttpPost("reset-password")]
         public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordDto rdto)
         {
@@ -108,3 +108,4 @@ namespace Reservation.API.Controllers
 
     }
 }
+
