@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{512FB0BD-8465-4777-9321-5C50A4FEFFA8}|Reservation.API\\Reservation.API.csproj|c:\\users\\moh7a\\onedrive\\desktop\\reservation\\hotelreservation\\reservation.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{512FB0BD-8465-4777-9321-5C50A4FEFFA8}|Reservation.API\\Reservation.API.csproj|solutionrelative:reservation.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.Data\\Migrations\\20251114191453_AddNewTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Reservation.Data\\Migrations\\20251114191453_AddNewTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{512FB0BD-8465-4777-9321-5C50A4FEFFA8}|Reservation.API\\Reservation.API.csproj|c:\\users\\moh7a\\onedrive\\desktop\\reservation\\hotelreservation\\reservation.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{512FB0BD-8465-4777-9321-5C50A4FEFFA8}|Reservation.API\\Reservation.API.csproj|solutionrelative:reservation.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D74CD0F-B88C-4D65-8B29-9721C350E697}|Reservation.Data\\Reservation.Data.csproj|c:\\users\\moh7a\\onedrive\\desktop\\reservation\\hotelreservation\\reservation.data\\migrations\\20251107205253_add-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D74CD0F-B88C-4D65-8B29-9721C350E697}|Reservation.Data\\Reservation.Data.csproj|solutionrelative:reservation.data\\migrations\\20251107205253_add-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D74CD0F-B88C-4D65-8B29-9721C350E697}|Reservation.Data\\Reservation.Data.csproj|c:\\users\\moh7a\\onedrive\\desktop\\reservation\\hotelreservation\\reservation.data\\migrations\\20251112123840_addcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D74CD0F-B88C-4D65-8B29-9721C350E697}|Reservation.Data\\Reservation.Data.csproj|solutionrelative:reservation.data\\migrations\\20251112123840_addcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{512FB0BD-8465-4777-9321-5C50A4FEFFA8}|Reservation.API\\Reservation.API.csproj|c:\\users\\moh7a\\onedrive\\desktop\\reservation\\hotelreservation\\reservation.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{512FB0BD-8465-4777-9321-5C50A4FEFFA8}|Reservation.API\\Reservation.API.csproj|solutionrelative:reservation.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{512FB0BD-8465-4777-9321-5C50A4FEFFA8}|Reservation.API\\Reservation.API.csproj|c:\\users\\moh7a\\onedrive\\desktop\\reservation\\hotelreservation\\reservation.api\\services\\email\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{512FB0BD-8465-4777-9321-5C50A4FEFFA8}|Reservation.API\\Reservation.API.csproj|solutionrelative:reservation.api\\services\\email\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{512FB0BD-8465-4777-9321-5C50A4FEFFA8}|Reservation.API\\Reservation.API.csproj|c:\\users\\moh7a\\onedrive\\desktop\\reservation\\hotelreservation\\reservation.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{512FB0BD-8465-4777-9321-5C50A4FEFFA8}|Reservation.API\\Reservation.API.csproj|solutionrelative:reservation.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{512FB0BD-8465-4777-9321-5C50A4FEFFA8}|Reservation.API\\Reservation.API.csproj|c:\\users\\moh7a\\onedrive\\desktop\\reservation\\hotelreservation\\reservation.api\\reservation.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{512FB0BD-8465-4777-9321-5C50A4FEFFA8}|Reservation.API\\Reservation.API.csproj|solutionrelative:reservation.api\\reservation.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1010,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20251114191453_AddNewTables.cs",
+              "DocumentMoniker": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.Data\\Migrations\\20251114191453_AddNewTables.cs",
+              "RelativeDocumentMoniker": "Reservation.Data\\Migrations\\20251114191453_AddNewTables.cs",
+              "ToolTip": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.Data\\Migrations\\20251114191453_AddNewTables.cs",
+              "RelativeToolTip": "Reservation.Data\\Migrations\\20251114191453_AddNewTables.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T19:14:54.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20251112123840_addcode.cs",
+              "DocumentMoniker": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.Data\\Migrations\\20251112123840_addcode.cs",
+              "RelativeDocumentMoniker": "Reservation.Data\\Migrations\\20251112123840_addcode.cs",
+              "ToolTip": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.Data\\Migrations\\20251112123840_addcode.cs",
+              "RelativeToolTip": "Reservation.Data\\Migrations\\20251112123840_addcode.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T18:58:04.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.API\\Program.cs",
+              "RelativeDocumentMoniker": "Reservation.API\\Program.cs",
+              "ToolTip": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.API\\Program.cs",
+              "RelativeToolTip": "Reservation.API\\Program.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T18:42:50.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Reservation.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.API\\appsettings.json",
+              "RelativeToolTip": "Reservation.API\\appsettings.json",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAABYAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-14T18:45:35.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Reservation.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Reservation.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-14T18:38:02.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20251107205253_Add-Migration.cs",
+              "DocumentMoniker": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.Data\\Migrations\\20251107205253_Add-Migration.cs",
+              "RelativeDocumentMoniker": "Reservation.Data\\Migrations\\20251107205253_Add-Migration.cs",
+              "ToolTip": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.Data\\Migrations\\20251107205253_Add-Migration.cs",
+              "RelativeToolTip": "Reservation.Data\\Migrations\\20251107205253_Add-Migration.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T18:58:39.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Reservation.API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.API\\appsettings.Development.json",
+              "RelativeToolTip": "Reservation.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-14T18:43:13.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Reservation.API",
+              "DocumentMoniker": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.API\\Reservation.API.csproj",
+              "RelativeDocumentMoniker": "Reservation.API\\Reservation.API.csproj",
+              "ToolTip": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.API\\Reservation.API.csproj",
+              "RelativeToolTip": "Reservation.API\\Reservation.API.csproj",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAEwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-14T18:39:35.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.API\\Services\\Email\\EmailService.cs",
+              "RelativeDocumentMoniker": "Reservation.API\\Services\\Email\\EmailService.cs",
+              "ToolTip": "C:\\Users\\moh7a\\OneDrive\\Desktop\\Reservation\\HotelReservation\\Reservation.API\\Services\\Email\\EmailService.cs",
+              "RelativeToolTip": "Reservation.API\\Services\\Email\\EmailService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T18:39:01.744Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

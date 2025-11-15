@@ -12,6 +12,8 @@ using Reservation.Data.Model.Role;
 using Reservation.Data.Model.User;
 using System.Text;
 using System.Threading.Tasks;
+using Reservation.Domain.Interfaces;
+using Reservation.Infrastructure.Services;
 
 namespace Reservation.API
 {
@@ -27,7 +29,7 @@ namespace Reservation.API
             builder.Services.AddDbContext<ApplicationDbContext>(
                 options =>
                 {
-                    options.UseSqlServer(builder.Configuration.GetConnectionString("..."));
+                    options.UseSqlServer(builder.Configuration.GetConnectionString("SQLConnection"));
                 }
                 );
 
@@ -67,6 +69,9 @@ namespace Reservation.API
 
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
+
+            builder.Services.AddScoped<IHotelService, HotelService>();
+
 
 
             var app = builder.Build();

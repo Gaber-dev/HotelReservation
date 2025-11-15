@@ -9,3 +9,15 @@ E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\obj\Debug\ne
 E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\obj\Debug\net8.0\refint\Reservation.Domain.dll
 E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.pdb
 E:\HotelReservationSystemAPI\HotelReservationAPI\Reservation.Domain\obj\Debug\net8.0\ref\Reservation.Domain.dll
+C:\Users\moh7a\OneDrive\Desktop\Reservation\HotelReservation\Reservation.Domain\bin\Debug\net8.0\Reservation.Domain.deps.json
+C:\Users\moh7a\OneDrive\Desktop\Reservation\HotelReservation\Reservation.Domain\bin\Debug\net8.0\Reservation.Domain.dll
+C:\Users\moh7a\OneDrive\Desktop\Reservation\HotelReservation\Reservation.Domain\bin\Debug\net8.0\Reservation.Domain.pdb
+C:\Users\moh7a\OneDrive\Desktop\Reservation\HotelReservation\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moh7a\OneDrive\Desktop\Reservation\HotelReservation\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.AssemblyInfoInputs.cache
+C:\Users\moh7a\OneDrive\Desktop\Reservation\HotelReservation\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.AssemblyInfo.cs
+C:\Users\moh7a\OneDrive\Desktop\Reservation\HotelReservation\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.csproj.CoreCompileInputs.cache
+C:\Users\moh7a\OneDrive\Desktop\Reservation\HotelReservation\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.sourcelink.json
+C:\Users\moh7a\OneDrive\Desktop\Reservation\HotelReservation\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.dll
+C:\Users\moh7a\OneDrive\Desktop\Reservation\HotelReservation\Reservation.Domain\obj\Debug\net8.0\refint\Reservation.Domain.dll
+C:\Users\moh7a\OneDrive\Desktop\Reservation\HotelReservation\Reservation.Domain\obj\Debug\net8.0\Reservation.Domain.pdb
+C:\Users\moh7a\OneDrive\Desktop\Reservation\HotelReservation\Reservation.Domain\obj\Debug\net8.0\ref\Reservation.Domain.dll
