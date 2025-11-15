@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity;
 using Reservation.Data.Model.ContactUs;
 using Reservation.Data.Model.Guests;
 using Reservation.Data.Model.HotelReviews;
@@ -13,14 +13,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Reservation.Data.Model.User
-{
+{   
     public class AppUser : IdentityUser
     {
-        public string FirstName { get; set; } = string.Empty;
-        public string LastName { get; set; } = string.Empty;
-        public string? StreetAddress { get; set; }
+        public string FullName { get; set; } = string.Empty;
         public string? ProfileImage { get; set; }
         public DateTime? DateOfBirth { get; set; }
+        public DateTime? ExpityAt { get; set; }
+        public string? ResetCode { get; set; }
         public ICollection<Guest> guests { get; set; } = new HashSet<Guest>();
         public ICollection<Address> address { get; set; } = new HashSet<Address>();
 

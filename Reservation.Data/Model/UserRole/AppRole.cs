@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Reservation.Data.Model.Role
 {
+    // Role 
     public class AppRole : IdentityRole
     {
-
         public string? Description { get; set; }
     }
 }
