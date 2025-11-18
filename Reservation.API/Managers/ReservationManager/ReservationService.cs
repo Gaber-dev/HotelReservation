@@ -64,7 +64,6 @@ namespace Reservation.API.Managers.ReservationManager
             _context.Invoices.Add(invoice);
             await _context.SaveChangesAsync();
 
-            // payment
             var payment = new Payment
             {
                 Name = "Card",
@@ -83,7 +82,6 @@ namespace Reservation.API.Managers.ReservationManager
      dto.FullName
  );
 
-            // أضف السطر ده:
             payment.PaymobOrderId = paymobOrderId;
             await _context.SaveChangesAsync();
 
@@ -105,9 +103,7 @@ namespace Reservation.API.Managers.ReservationManager
 
         public async Task HandlePaymobCallbackAsync(PaymobCallbackDto callback)
         {
-            var obj = callback.obj; // ← كل البيانات الحقيقية هنا
-
-            // ابحث عن الدفع بالـ PaymobOrderId (اللي حفظناه لما عملنا الحجز)
+            var obj = callback.obj; 
             var payment = await _context.Payments
                 .Include(p => p.Invoice)
                 .ThenInclude(i => i!.Reserve)
@@ -137,3 +133,4 @@ namespace Reservation.API.Managers.ReservationManager
     }
 
 }
+
