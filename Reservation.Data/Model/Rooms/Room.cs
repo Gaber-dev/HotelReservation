@@ -29,15 +29,16 @@ namespace Reservation.Data.Model.Rooms
         public string Smooking { get; set; }
 
         public int RoomTypeId { get; set; }
-        public RoomType roomType { get; set; }
+        public RoomType RoomType { get; set; }
 
 
-        public ICollection<RoomImage> roomImages  = new HashSet<RoomImage>();
+        public ICollection<RoomImage> RoomImages { get; set; } = new HashSet<RoomImage>();
 
-        public ICollection<Amenity> amenities = new HashSet<Amenity>();
+        public ICollection<RoomAmenity> Amenities { get; set; } = new HashSet<RoomAmenity>();
 
-        public ICollection<Reserve> reservations = new HashSet<Reserve>();
+        public ICollection<Reserve> Reservations { get; set; } = new HashSet<Reserve>();
 
 
     }
 }
+
