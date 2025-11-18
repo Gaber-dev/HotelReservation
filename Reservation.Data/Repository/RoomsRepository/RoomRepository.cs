@@ -30,30 +30,24 @@ namespace Reservation.Data.Repository.RoomsRepository
                 .Include(r => r.Reservations).ThenInclude(res => res.ReservationReview)
                 .AsQueryable();
 
-            // ── 1. Date Range (THE MOST IMPORTANT FIX) ─────────────────────
             var checkIn = dto.CheckInDate?.Date ?? DateTime.Today;
             var checkOut = dto.CheckOutDate?.Date ?? DateTime.Today.AddDays(1);
 
-            // Critical: use >= on CheckOutDate (hotel standard: room becomes available on checkout day)
             query = query.Where(room => !room.Reservations.Any(res =>
                 res.CheckinDate < checkOut && res.CheckoutDate >= checkIn));
 
-            // ── 2. Number of Guests ───────────────────────────────────────
             if (dto.NumberOfGuests > 0)
                 query = query.Where(r => r.RoomType.MaxOccupancy >= dto.NumberOfGuests.Value);
 
-            // ── 3. Price Range ───────────────────────────────────────────
             if (dto.MinPrice.HasValue)
                 query = query.Where(r => r.PricePerroom >= dto.MinPrice.Value);
 
             if (dto.MaxPrice.HasValue)
                 query = query.Where(r => r.PricePerroom <= dto.MaxPrice.Value);
 
-            // ── 4. Room Types ─────────────────────────────────────────────
             if (dto.RoomTypes != null && dto.RoomTypes.Any())
                 query = query.Where(r => dto.RoomTypes.Contains(r.RoomType.Name));
 
-            // ── 5. Amenities (works perfectly with 1 or 10 items) ─────────
             if (dto.Amenities != null && dto.Amenities.Any(x => !string.IsNullOrWhiteSpace(x)))
             {
                 var requestedAmenities = dto.Amenities
@@ -84,3 +78,4 @@ namespace Reservation.Data.Repository.RoomsRepository
 
     }
 }
+
