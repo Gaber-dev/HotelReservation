@@ -14,7 +14,8 @@ namespace Reservation.Data.Model.ContactUs
         public string Email { get; set; }
         public string Message { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
-        public string AppUserId { get; set; }
+        public string? AppUserId { get; set; }
         public AppUser? AppUser { get; set; }
     }
 }
+
