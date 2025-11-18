@@ -12,7 +12,6 @@ namespace Reservation.API.Managers.Paymob
         {
             _configuration = configuration;
             _httpClient = httpClient;
-            // Do NOT set BaseAddress — we use full URLs to avoid 404 forever
         }
 
         public async Task<(string PaymentToken, string PaymobOrderId)> CreatePaymentKeyAsync(
@@ -21,12 +20,10 @@ namespace Reservation.API.Managers.Paymob
             var apiKey = _configuration["Paymob:ApiKey"]!;
             var integrationId = _configuration["Paymob:IntegrationId"]!;
 
-            // 1. Auth
             var authResp = await _httpClient.PostAsJsonAsync("https://accept.paymob.com/api/auth/tokens", new { api_key = apiKey });
             authResp.EnsureSuccessStatusCode();
             var authData = await authResp.Content.ReadFromJsonAsync<PaymobAuthResponse>();
 
-            // 2. Order
             int amountCents = (int)Math.Round(amount * 100);
             var orderResp = await _httpClient.PostAsJsonAsync("https://accept.paymob.com/api/ecommerce/orders", new
             {
@@ -39,7 +36,6 @@ namespace Reservation.API.Managers.Paymob
             orderResp.EnsureSuccessStatusCode();
             var orderData = await orderResp.Content.ReadFromJsonAsync<PaymobOrderResponse>();
 
-            // 3. Payment Key
             var paymentKeyResp = await _httpClient.PostAsJsonAsync("https://accept.paymob.com/api/acceptance/payment_keys", new
             {
                 auth_token = authData.token,
@@ -67,8 +63,9 @@ namespace Reservation.API.Managers.Paymob
             paymentKeyResp.EnsureSuccessStatusCode();
             var paymentKeyData = await paymentKeyResp.Content.ReadFromJsonAsync<PaymobPaymentKeyResponse>();
 
-            return (paymentKeyData!.token, orderData.id.ToString()); // ← نرجّع الاتنين
+            return (paymentKeyData!.token, orderData.id.ToString()); 
         }
     }
 }
+
 
