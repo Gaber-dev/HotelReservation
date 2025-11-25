@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Options;
 using Reservation.Domain.Dtos.PaymobDto;
 
 namespace Reservation.API.Managers.Paymob
@@ -14,8 +14,7 @@ namespace Reservation.API.Managers.Paymob
             _httpClient = httpClient;
         }
 
-        public async Task<(string PaymentToken, string PaymobOrderId)> CreatePaymentKeyAsync(
-    double amount, string currency, string customerEmail, string customerName)
+        public async Task<(string PaymentToken, string PaymobOrderId)> CreatePaymentKeyAsync(double amount, string currency, string customerEmail, string customerName)
         {
             var apiKey = _configuration["Paymob:ApiKey"]!;
             var integrationId = _configuration["Paymob:IntegrationId"]!;
@@ -67,5 +66,4 @@ namespace Reservation.API.Managers.Paymob
         }
     }
 }
-
 
