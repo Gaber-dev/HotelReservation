@@ -1,4 +1,4 @@
-﻿using Reservation.Data.Model.User;
+using Reservation.Data.Model.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
