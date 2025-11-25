@@ -19,10 +19,11 @@ namespace Reservation.API.Controllers
 
         [HttpPost("paymob-callback")]
         [AllowAnonymous]
-        public async Task<IActionResult> PaymobCallback([FromBody] PaymobCallbackDto dto)  // ← [FromBody] مش [FromForm]
+        public async Task<IActionResult> PaymobCallback([FromBody] PaymobCallbackDto dto)
         {
             await _reservationService.HandlePaymobCallbackAsync(dto);
             return Ok();
         }
     }
 }
+
