@@ -1,4 +1,4 @@
-﻿namespace Reservation.API.Managers.Paymob
+namespace Reservation.API.Managers.Paymob
 {
     public interface IPaymobService
     {
