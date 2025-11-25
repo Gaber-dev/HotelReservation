@@ -1,4 +1,4 @@
-﻿using Reservation.Data.Model.Amenities;
+using Reservation.Data.Model.Amenities;
 using Reservation.Data.Model.Rooms;
 using System;
 using System.Collections.Generic;
@@ -13,9 +13,9 @@ namespace Reservation.Data.Model.RoomAmenities
         public int RoomAmenityId { get; set; }
 
         public int RoomId { get; set; }
-        public Room room { get; set; } 
+        public Room Room { get; set; } 
 
         public int AmenityId { get; set; }
-        public Amenity amenity { get; set; }
+        public Amenity Amenity { get; set; }
     }
 }
