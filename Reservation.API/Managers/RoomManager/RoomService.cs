@@ -1,4 +1,4 @@
-﻿using Reservation.Data.Model.RoomAmenities;
+using Reservation.Data.Model.RoomAmenities;
 using Reservation.Data.Model.RoomImages;
 using Reservation.Data.Model.Rooms;
 using Reservation.Data.Repository.AmenitiesRepository;
@@ -109,10 +109,7 @@ namespace Reservation.Domain.Managers.RoomManager
                     .DefaultIfEmpty(0)
                     .Average(),
 
-               
                 ReviewCount = r.Reservations.Count(res => res.ReservationReview != null),
-
-                
                 MainImageUrl = r.RoomImages
                     .OrderBy(ri => ri.Id)
                     .Select(ri => ri.ImageUrl)
@@ -232,19 +229,6 @@ namespace Reservation.Domain.Managers.RoomManager
             };
         }
 
-
-
-
-
-
-
-
-
-
-    }
-
-
-
-    
+    }    
 }
 
