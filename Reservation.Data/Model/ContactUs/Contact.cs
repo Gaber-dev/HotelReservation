@@ -1,4 +1,4 @@
-﻿using Reservation.Data.Model.User;
+using Reservation.Data.Model.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,4 +18,3 @@ namespace Reservation.Data.Model.ContactUs
         public AppUser? AppUser { get; set; }
     }
 }
-
