@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Reservation.Data.Model.Amenities;
 using Reservation.Data.Model.ContactUs;
@@ -37,12 +37,10 @@ namespace Reservation.Data.Data
         public DbSet<Guest> Guest { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
-
         public DbSet<Reserve> Reservations { get; set; }
         public DbSet<HotelReview> HotelReviews { get; set; }
         public DbSet<ReservationReview> ReservationReviews { get; set; }
         public DbSet<Contact> ContactUs { get; set; }
-
         public DbSet<Address> Address { get; set; }
 
 
