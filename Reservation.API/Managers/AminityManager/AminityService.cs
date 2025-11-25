@@ -1,4 +1,4 @@
-﻿using Reservation.Data.Model.Amenities;
+using Reservation.Data.Model.Amenities;
 using Reservation.Data.Repository.AmenitiesRepository;
 using Reservation.Domain.Dtos.AminityDto;
 using System;
