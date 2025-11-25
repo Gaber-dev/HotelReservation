@@ -22,7 +22,7 @@ namespace Reservation.API.Controllers
         }
 
         [HttpPost("create")]
-        [Authorize] // user must be logged in
+        [Authorize] 
         public async Task<ActionResult<CreateReservationResponseDto>> CreateReservation([FromBody] CreateReservationRequestDto dto)
         {
             var userId = _userManager.GetUserId(User);
@@ -31,3 +31,4 @@ namespace Reservation.API.Controllers
         }
     }
 }
+
