@@ -1,4 +1,4 @@
-﻿using Reservation.Data.Model.Roomtype;
+using Reservation.Data.Model.Roomtype;
 using Reservation.Data.Repository.RoomTypiesRepository;
 using Reservation.Domain.Dtos.ImageDto;
 using System;
