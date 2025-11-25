@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Reservation.API.Managers.Paymob;
 using Reservation.Data.Data;
 using Reservation.Data.Model.Guests;
@@ -12,12 +12,12 @@ using Reservation.Domain.Managers.RoomManager;
 
 namespace Reservation.API.Managers.ReservationManager
 {
-    public class ReservationService  : IReservationService
+    public class ReservationService : IReservationService
     {
         private readonly ApplicationDbContext _context;
         private readonly IPaymobService _paymobService;
         private readonly IRoomService _roomService;
-        private readonly IConfiguration _configuration; 
+        private readonly IConfiguration _configuration;
 
         public ReservationService(ApplicationDbContext context, IPaymobService paymobService, IRoomService roomService, IConfiguration configuration)
         {
@@ -25,12 +25,10 @@ namespace Reservation.API.Managers.ReservationManager
             _paymobService = paymobService;
             _roomService = roomService;
             _configuration = configuration;
-            _configuration = configuration;
         }
 
         public async Task<CreateReservationResponseDto> CreateReservationAndInitPaymentAsync(string userId, CreateReservationRequestDto dto)
         {
-            
             var price = await _roomService.CalculatePriceToRoom(new PriceRequestCalculateDto
             {
                 RoomId = dto.RoomId,
@@ -39,7 +37,6 @@ namespace Reservation.API.Managers.ReservationManager
                 Guests = dto.GuestsCount
             });
 
-            
             var reserve = new Reserve
             {
                 CheckinDate = dto.CheckinDate,
@@ -66,25 +63,17 @@ namespace Reservation.API.Managers.ReservationManager
 
             var payment = new Payment
             {
-                Name = "Card",
                 AmountPaid = price.TotalAmount,
                 Status = "Pending",
-                InvoiceId = invoice.Id
+                InvoiceId = invoice.Id,
+                PaymentDate = DateTime.UtcNow
             };
             _context.Payments.Add(payment);
             await _context.SaveChangesAsync();
 
-
-            var (paymentToken, paymobOrderId) = await _paymobService.CreatePaymentKeyAsync(
-     price.TotalAmount,
-     "EGP",
-     dto.Email,
-     dto.FullName
- );
-
+            var (paymentToken, paymobOrderId) = await _paymobService.CreatePaymentKeyAsync(price.TotalAmount, "EGP", dto.Email, dto.FullName);
             payment.PaymobOrderId = paymobOrderId;
             await _context.SaveChangesAsync();
-
 
             var iframeId = _configuration["Paymob:IframeId"]
                   ?? throw new InvalidOperationException("Paymob:IframeId is missing in appsettings.json");
@@ -103,20 +92,28 @@ namespace Reservation.API.Managers.ReservationManager
 
         public async Task HandlePaymobCallbackAsync(PaymobCallbackDto callback)
         {
-            var obj = callback.obj; 
+            var obj = callback.obj;
+
+            
             var payment = await _context.Payments
                 .Include(p => p.Invoice)
                 .ThenInclude(i => i!.Reserve)
                 .FirstOrDefaultAsync(p => p.PaymobOrderId == obj.order.id.ToString());
 
             if (payment == null)
+            {
+                
                 return;
+            }
 
-            if (obj.success && obj.is_paid)
+            if (obj.success == true)
             {
                 payment.Status = "Paid";
-                payment.PaymobOrderId = obj.id.ToString();
+                payment.TransactionId = obj.id.ToString();
                 payment.PaymentDate = DateTime.UtcNow;
+
+                if (obj.amount_cents > 0)
+                    payment.AmountPaid = obj.amount_cents / 100.0;
 
                 if (payment.Invoice?.Reserve != null)
                     payment.Invoice.Reserve.status = "Confirmed";
@@ -124,13 +121,13 @@ namespace Reservation.API.Managers.ReservationManager
             else
             {
                 payment.Status = "Failed";
+
                 if (payment.Invoice?.Reserve != null)
-                    payment.Invoice.Reserve.status = "Cancelled";
+                    payment.Invoice.Reserve.status = "Failed";
             }
+
 
             await _context.SaveChangesAsync();
         }
     }
-
 }
-
