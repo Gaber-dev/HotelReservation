@@ -1,4 +1,5 @@
-﻿using Reservation.Data.Model.Rooms;
+using Reservation.Data.Model.RoomAmenities;
+using Reservation.Data.Model.Rooms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,6 @@ namespace Reservation.Data.Model.Amenities
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-
         public ICollection<RoomAmenity> rooms { get; set; } = new HashSet<RoomAmenity>();
-
     }
 }
-
