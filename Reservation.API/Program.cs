@@ -38,7 +38,7 @@ namespace Reservation.API
             builder.Services.AddDbContext<ApplicationDbContext>(
                 options =>
                 {
-                    options.UseSqlServer(builder.Configuration.GetConnectionString("SQLConnection"));
+                    options.UseSqlServer(builder.Configuration.GetConnectionString("..."));
                 }
                 );
 
@@ -201,4 +201,5 @@ namespace Reservation.API
         }
     }
 }
+
 
