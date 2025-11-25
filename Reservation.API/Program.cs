@@ -127,6 +127,10 @@ namespace Reservation.API
             builder.Services.AddScoped<IRoomTypeRepository ,  RoomTypeRepository>();
             builder.Services.AddScoped<IRoomTypeService, RoomTypeService>();
             builder.Services.AddScoped<IReservationService , ReservationService>();
+            builder.Services.AddScoped<IAddressesRepository , AddressesRepository>();
+            builder.Services.AddScoped<IReviewService , ReviewService>();
+            builder.Services.AddScoped<IHotelReviewRepository , HotelReviewRepository>();
+            builder.Services.AddScoped<IReservationReviewRepository , ReservationReviewRepository>();
             builder.Services.AddHttpClient<IPaymobService, PaymobService>();
 
             var app = builder.Build();
@@ -197,3 +201,4 @@ namespace Reservation.API
         }
     }
 }
+
