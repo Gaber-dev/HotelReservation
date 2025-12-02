@@ -1,0 +1,162 @@
+[
+  {
+    "ContainingType": "Reservation.API.Controllers.AccountController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Account/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Reservation.Domain.Dtos.AccountDto.ForgotPasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Reservation.API.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/Account/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Reservation.Domain.Dtos.AccountDto.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Reservation.API.Controllers.AccountController",
+    "Method": "RegisterClient",
+    "RelativePath": "api/Account/Register-Client",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datafromclient",
+        "Type": "Reservation.Domain.Dtos.AccountDto.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Reservation.API.Controllers.AccountController",
+    "Method": "RegisterReceptionist",
+    "RelativePath": "api/Account/Register-Receptionist",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datafromrec",
+        "Type": "Reservation.Domain.Dtos.AccountDto.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Reservation.API.Controllers.AccountController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Account/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rdto",
+        "Type": "Reservation.Domain.Dtos.AccountDto.ResetPasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Reservation.API.Controllers.HotelController",
+    "Method": "GetFeatures",
+    "RelativePath": "api/Hotel/features",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Reservation.Domain.Models.Feature, Reservation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Reservation.API.Controllers.HotelController",
+    "Method": "GetFooter",
+    "RelativePath": "api/Hotel/footer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Reservation.Domain.Models.FooterInfo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Reservation.API.Controllers.HotelController",
+    "Method": "GetHero",
+    "RelativePath": "api/Hotel/hero",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Reservation.Domain.Models.HeroSection",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Reservation.API.Controllers.HotelController",
+    "Method": "GetTestimonials",
+    "RelativePath": "api/Hotel/testimonials",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Reservation.Domain.Models.Testimonial, Reservation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

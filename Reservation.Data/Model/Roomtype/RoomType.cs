@@ -1,4 +1,4 @@
-﻿using Reservation.Data.Model.Rooms;
+using Reservation.Data.Model.Rooms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,6 @@ namespace Reservation.Data.Model.Roomtype
         public double BasePrice { get; set; }
         public int MaxOccupancy { get; set; }
         public string BedType { get; set; }
-
         public ICollection<Room> rooms = new HashSet<Room>();
     }
 }

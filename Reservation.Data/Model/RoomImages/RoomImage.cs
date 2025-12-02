@@ -1,4 +1,4 @@
-﻿using Reservation.Data.Model.Rooms;
+using Reservation.Data.Model.Rooms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +13,7 @@ namespace Reservation.Data.Model.RoomImages
         public string ImageUrl { get; set; }
 
         public int RoomId { get; set; }
-        public Room room { get; set; }
+        public Room Room { get; set; }
 
 
     }
